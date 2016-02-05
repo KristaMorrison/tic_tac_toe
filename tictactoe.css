@@ -1,17 +1,45 @@
 body {
+  background-image: url("flag.jpg");
   background-color: black;
-}
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
 
 h1 {
   color: red;
   text-align: center;
 }
-/*
-.gridContainer{
-  height: 45vw;
-  width: 45vw;
+h2{
+  color: white;
+  text-align: center;
+}
+
+.jumbotron{
+  border: 1px solid red;
+}
+
+.text-center {
+  border: 1px solid red;
+}
+
+.container-fluid{
   margin:auto;
-}*/
+
+}
+.col-sm-3{
+
+}
+
+.col-sm-6{
+
+}
+
+.grid{
+  margin: auto;
+  display: none;
+}
 
 #pirate1input{
   margin-left: 5%;
@@ -25,14 +53,12 @@ h1 {
   font-family: fantasy;
 }
 
-#startButton{
-
+#playAgainButton{
+  display: none;
 }
 
-.grid {
-  height: 45vw;
-  width: 45vw;
-  margin:auto;
+#resetButton{
+  display: none;
 }
 
 td {
