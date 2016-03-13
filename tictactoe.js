@@ -133,14 +133,12 @@ $(document).ready(function(){
 //Returns picture based on which player's turn it currently is and increases the clickCounter
   function onePlay(){
     var picture;
-    //If the clickCounter is odd, that means the most recent player was pirate1.
     if (lastPlayBones){
       picture = '<img src="bones.png" height= 5vw width= 5vw/>';
       lastPlayBones = false;
       $("#pirate2name").css('color', 'red');
       $("#pirate1name").css('color', 'white');
     }
-    //If the clickCounter is even, that means the most recent player was pirate2.
     else {
       picture ='<img src="skull.png" height= 5vw width= 5vw/>';
       lastPlayBones = true;
@@ -194,7 +192,7 @@ function checkForWinner(){
       });
     }
 
-  //function to check who won the game, based on the clickCounter
+  //function to check who won the game, based on the last play
   function whoWon (){
     if (!lastPlayBones){
       $("#gameResults").html(pirate1 + ", Ye Won The Game! ARRRRRR!");
